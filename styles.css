@@ -1,0 +1,708 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body, html {margin: 0; padding: 0;}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fefefe;
+  }
+
+h1 {
+    color: #fff;
+    font-size: 7em;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 800;
+    -webkit-box-reflect: below -14px linear-gradient(transparent 45%, white);
+    letter-spacing: -4px;
+}
+
+/* HEADER */
+
+/*For Mobile*/
+.desktop-header {display: none;}
+
+/*For Desktop*/
+@media (min-width: 768px) {
+.desktop-header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: #111;
+  }
+}
+
+/*Mobile Header*/
+h2 {
+  font-size: 40px;
+  font-family: "Gill Sans", sans-serif;
+  padding-top: 40px; 
+}
+
+h3 {
+  font-size: 32px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+h4 {
+  font-size: 26px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+p {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+  @media screen and (max-width: 700px) { p {
+  font: 100 16px/24px Monserrat, sans-serif;
+  margin: 5px 0;
+} }
+
+  @media screen and (max-width: 1150px) { p {
+  font: 100 16px/28px Montserrat, sans-serif;
+} }
+
+/* ABOUT US*/
+
+.About-header {
+  line-height: 40px;
+  padding: 30px 20px 0px 20px;}
+
+  @media screen and (max-width: 1150px) { 
+    .About-row, .container {
+  padding: 0 20px;
+}
+  }
+
+  @media screen and (max-width: 700px) { 
+    .container {
+  width: 480px;
+  max-width: 100%;
+} 
+}
+
+  @media screen and (max-width: 1150px) { .container {
+  width: 720px;
+} }
+
+.container-services {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  line-height: 25.6px;
+}
+
+.About-row {
+  display: flex;
+  padding: 50px 30px 40px 10px; /* top right bottom left*/
+  border-bottom: 1px solid #151515;
+  justify-content: space-between;
+}
+
+.About-row-number {
+  font: 300 20px/24px Montserrat, sans-serif; 
+}
+
+.About-row-title {
+  font: 180 24px/32px Montserrat, sans-serif;
+  margin-top: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 36px;
+  position: relative;
+
+}
+
+@media (min-width: 768px) {
+.About-row-title {
+  font: 300 32px/42px Montserrat, sans-serif;
+  margin-top: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 42px;
+  position: relative;
+  }
+}
+
+.About-row-content {
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 32px;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+html {
+  font: 100 20px/1.6 Montserrat,arial,sans-serif;
+    font-feature-settings: normal;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  direction: ltr; }
+
+
+/*CONTACT FORM*/
+form {
+  max-width:420px; 
+  margin:50px auto; 
+}
+
+.feedback-input {
+  color:#5a5a5a;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #3388ff;
+  transition: all 0.3s;
+  padding: 15px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #3388ff; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: Montserrat, Helvetica, sans-serif;
+  width: 100%;
+  background: #3388ff;
+  border-radius:5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover { background:#0D52BD; } /*C0C0C0*/
+
+/* SECTOR EXPERIENCE - LOGOS */
+#logo {
+  width: 90px;
+  height: 90px;
+  filter: grayscale(1);
+}
+
+.rfid {
+  width: 50px;
+  height: 50px;
+  filter: grayscale(1);
+  margin: 33px 0;
+}
+
+/*Show only the bullet point version in tablets and mobiles*/
+
+@media (min-width: 600px) {
+.mobile-sectors {
+  display:none;
+ }
+}
+
+.sector-list {
+  list-style: none;
+  display: block;
+  gap: 0 1.2em;
+  text-transform: capitalize;
+}
+
+.sector-list::before {
+  content: "\2022";
+  color: #3388ff;
+  display: inline-block; 
+  width: 1.5em;
+}
+
+/*Hide sector icons in tablets and mobiles*/
+.logos-flex-container {display:none;}
+
+@media (min-width: 600px) {
+.logos-flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+ }
+}
+
+.logos-flex-item {
+  width: 200px;
+  height: 80px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 970px) {
+  .logos-flex-item {
+  width: 140px;
+  height: 80px;
+  margin-top: 10px;
+  text-align: center;
+}
+}
+
+/* Contact form -- positioning the divs*/
+
+.contact-page {
+    border: 3px solid #fff;
+    padding: 50px 20px;
+}
+
+.contact-title-left {
+  padding: 50px 20px 0px 20px;
+}
+
+.contact-page-left {
+  padding: 30px 20px 0px 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+.contact-title-left {
+  padding: 30px 0 0 0;
+}
+}
+
+@media (min-width: 768px) {
+.contact-page-left {
+    width: 100%;
+    padding: 20px 0 0 100px;
+  }  
+}
+
+.contact-title-right {
+  padding: 0 100px 0 0px;
+}
+
+.contact-page-right {
+    width: 100%;
+    padding: 0 0 0 100px;
+  }
+
+/* SOCIAL MEDIA BUTTONS */
+.li {
+  width: 50px;
+  height: auto;
+}
+
+.li:hover {
+    opacity: 0.7;
+}
+
+/* ISSUE FOCUS */
+
+.issue-header {
+  padding: 30px 20px 0px 20px;
+}
+
+@media (min-width: 768px) {
+.issue-header {
+  padding: 40px 0 0 100px;
+}
+}
+
+.ul-issue {
+  list-style: none;
+  display: block; 
+  gap: 0 1.2em;
+  text-transform: capitalize;
+  }
+
+@media (min-width: 768px) {
+.ul-issue {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  gap: 0 1.5em;
+  text-transform: capitalize;
+  }
+}
+
+.issue::before {
+  content: "\2022";
+  color: #3388ff;
+  display: inline-block; 
+  width: 1.5em;
+}
+
+.issue {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+.issue {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 20px;
+  padding: 0 90px;
+  list-style: none;
+  }
+}
+
+.issue-no-style {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 20px;
+  text-transform: none;
+  list-style: none;
+  padding: 0 90px;
+}
+
+/* SECTOR EXPERIENCE - overlay effect for logos*/
+
+.Experience-header, .logos-flex-container {
+  padding: 30px 20px 0px 20px;
+}
+
+@media (min-width: 768px) {
+.Experience-header, .logos-flex-container {
+  padding: 0 100px 0 100px;
+  height: 100%;
+  width: 100%;
+  }
+}
+
+#logo {
+  width: 80px;
+  height: auto;
+  display: inline-block;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+#logo {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  padding: 15px 15px;
+}
+}
+
+figure:hover #logo {
+  opacity: 0.1;
+}
+
+figure:hover .rfid {
+  opacity: 0.1;
+}
+
+figure {
+  height: 100%; 
+  width: 100%;
+}
+
+figcaption {
+  width: 100%;
+  color: #03254c;
+  position: relative;
+  bottom: 100%;
+  left: 0%;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.35s ease;
+  font-family: Montserrat, Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+figure:hover .overlay {
+    opacity: 1;
+  }
+
+@-moz-document url-prefix() {
+  .overlay {
+    display: block;
+    width: 100%;
+    color: #03254c;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 14pt;
+    bottom: 40%;
+    opacity: 0;
+    transition: all 0.35s ease;
+    font-family: Monserrat, Arial, sans-serif;
+    text-align: center;
+  }
+}
+@-moz-document url-prefix() {
+  figure:hover .overlay {
+    bottom: 50%; 
+    opacity: 1;
+  }
+}
+
+/* HERO TITLE */
+
+.hero-content {
+  padding: 30px 20px 0px 20px;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 768px) {
+.hero-content {
+  padding: 40px 0px 0 100px;
+  width: 100%;
+  margin-bottom: 5em;
+}
+}
+
+.hero-intro {
+  font-size: clamp(1.1rem, 1.753vw, 1.753rem);
+	font-weight: 300;
+	max-width: 50ch;
+  margin-bottom: 1em;
+  padding: 20px 100px 0 0px;
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 2.25vw, 2.68rem);
+  line-height: 1.2;
+  font-family: "Gill Sans", Montserrat, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: clamp(2.441rem, 4.5vw, 5.36rem);
+    line-height: 1.2;
+    font-family: "Gill Sans", Montserrat, Helvetica, sans-serif;
+    padding: 20px 100px 0 0;
+    max-width: 45ch;
+  } 
+}
+
+.br {
+  display: block;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+.br {
+  display: block;
+  margin-bottom: 0.7em;
+  }
+    }
+
+/*Case study*/
+
+.Case-study-header {
+  padding: 20px 0 15px 20px;
+}
+
+@media (min-width: 768px) {
+.Case-study-header {
+  padding: 20px 0 20px 100px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.box:before {
+  border-top: 0.4em solid #3388ff;
+  content: '';
+  display: block;
+  margin-left: 5%;
+  width: 20%;
+  padding-top: 15px;
+}
+
+.box p:hover {color: #C0C0C0;}
+
+
+.clearfix {
+  padding: 0 0 30px 20px;
+  text-align: center;
+  }
+
+@media (min-width: 768px) {
+.clearfix {
+  padding: 0 0 50px 90px;
+  text-align: center;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: float;
+  
+}
+
+.case-p {
+  font-family: "Gill Sans", Montserrat, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+.case-p {
+  font-family: "Gill Sans", Montserrat, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  }
+}
+
+.clearfix a {
+  text-decoration: none;
+  color: black;
+}
+
+/*footer*/
+
+footer {
+  min-height: 40vh;
+  display: grid;
+  grid-template-rows: 1fr 2f;
+  background: #3f4355;
+  height: auto;
+  width: 100vw;
+  color: #f5f5f5;
+  padding: 30px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 550px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 16px;
+  color: #cacdd2;
+  justify-content: center;
+}
+
+.footer-content a {
+  text-decoration:none;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+.footer-menu {
+  float: center;
+  }
+
+@media (max-width: 500px) {
+  .footer-bottom p {
+    float: none;
+  }
+
+  .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.copyright {
+  padding-top: 20px;
+}
+
+/* CSS */
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 20px 20px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+  margin: 0 4px;
+}
+
+@media (max-width: 600px) {
+  .hide {display:none;}
+}
+
+.button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+  font-weight: bold;
+}
+
+.button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
